@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+
+  /* graphic design text */
+  --dark-desaturated-cyan: rgb(37, 86, 75);
+
+  /* photography text */
+  --dark-blue: hsl(198, 62%, 26%);
+
+  --dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 868px) {
+  .title {
+    margin: 4rem;
+  }
+
+  /* SERVICES */
+
+  .services__texts {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    margin: 2rem 0;
+    font-size: 3.5rem;
+  }
+
+  /* MENU */
+  .menu-btn {
+    display: block;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    position: fixed;
+    top: 8rem;
+    width: 90%;
+    height: 380px;
+    background-color: var(--white);
+
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 100;
+  }
+  .menu li {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+  .hero__link {
+    color: var(--dark-grayish-blue);
+  }
+  .hero__link--active {
+    background-color: var(--yellow);
+    color: #000;
+  }
+  .hero__link--active:hover {
+    background-color: var(--yellow);
+    color: #000;
+    opacity: 0.7;
+  }
+  .menu::before {
+    content: '';
+    border-top: 2.5rem solid transparent;
+    border-right: 2.5rem solid #FFF;
+    border-bottom: 2.5rem solid transparent;
+    border-left: 2.5rem solid transparent;
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+  }
+  .menu--active {
+    display: flex;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* ABOUT */
+  .about__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 1fr 500px 1fr;
+  }
+  .about__bg--egg {
+    order: -1;
+  }
+  .about__texts {
+    text-align: center;
+    margin: 2rem auto;
+  }
+  .cta {
+    margin-right: unset;
+  }
+
+  /* SERVICES */
+  .services__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* IMAGES */
+  .images__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .menu {
+    height: 300px;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  /* HERO */
+  .hero__container {
+    background: url('../images/mobile/image-header.jpg') no-repeat center/cover;
+  }
+
+  /* ABOUT */
+  .about__bg--egg {
+    background-image: url('../images/mobile/image-transform.jpg');
+  }
+  .about__bg--glass {
+    background-image: url('../images/mobile/image-stand-out.jpg');
+  }
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  /* SERVICES */
+  .services__card--cherry {
+    background-image: url('../images/mobile/image-graphic-design.jpg');
+  }
+  .services__card--orange {
+    background-image: url('../images/mobile/image-photography.jpg');
+  }
+  .services__texts {
+    width: 70%;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .testimonials__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+  .testimonials__title {
+    margin: 0 1rem 4rem;
+  }
+  .testimonials__copy {
+    width: 70%;
+    margin: 2rem auto;
+  }
+  .testimonials__card {
+    max-width: 100%;
+    flex: 1 0 406px;
+  }
+
+  /* IMAGES */
+  .images__bg {
+    height: 300px;
+  }
+  .images__bg--milkbottles {
+    background-image: url('../images/mobile/image-gallery-milkbottles.jpg');
+  }
+  .images__bg--orange {
+    background-image: url('../images/mobile/image-gallery-orange.jpg');
+  }
+  .images__bg--cone {
+    background-image: url('../images/mobile/image-gallery-cone.jpg');
+  }
+  .images__bg--sugarcubes {
+    background-image: url('../images/mobile/image-gallery-sugar-cubes.jpg');
+  }
+}
