@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="hero__container container">
+      <nav class="hero__nav">
+        <img src="images/logo.svg" alt="Sunnyside logo" class="hero__logo">
+        <button class="menu-btn" id="menu-btn">
+          <img src="images/icon-hamburger.svg" alt="Icon menu" class="menu-icon">
+        </button>
+        <ul class="menu" id="menu">
+          <li><a href="#" class="hero__link">About</a></li>
+          <li><a href="#" class="hero__link">Services</a></li>
+          <li><a href="#" class="hero__link">Projects</a></li>
+          <li><a href="#" class="hero__link hero__link--active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero__section">
+        <h1 class="title">We are creatives</h1>
+        <img src="images/icon-arrow-down.svg" alt="">
+      </section>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="about">
+      <div class="about__container container">
+        <article class="about__card">
+          <div class="about__texts">
+            <h2 class="subtitle">Transform your brand</h2>
+            <p class="about__copy">We are a full-service creative agency specializing in helping brands grow fast.Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <a href="#" class="cta cta--yellow">
+              <span>Learn more</span>
+            </a>
+          </div>
+        </article>
+
+        <div class="about__bg about__bg--egg"></div>
+        <div class="about__bg about__bg--glass"></div>
+
+        <article class="about__card">
+          <div class="about__texts">
+            <h2 class="subtitle">Stand out to the right audience</h2>
+            <p class="about__copy">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+            <a href="#" class="cta cta--pink">
+              <span>Learn more</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="services__container container">
+        <article class="services__card services__card--cherry">
+          <div class="services__texts services__texts--cherry">
+            <h3 class="services__title">Graphic Design</h3>
+            <p class="services__copy">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+          </div>
+        </article>
+        <article class="services__card services__card--orange">
+          <div class="services__texts services__texts--orange">
+            <h3 class="services__title">Photography</h3>
+            <p class="services__copy">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="testimonials__container container">
+        <h4 class="testimonials__title">Client testimonials</h4>
+        <div class="testimonials__cards">
+          <article class="testimonials__card">
+            <img src="images/image-emily.jpg" alt="Profile picture" class="testimonials__img">
+            <p class="testimonials__copy">We put our trust in Sunnyside and they delivered, making sure our needs were
+              met and deadlines were always hit.</p>
+            <h5 class="testimonials__name">Emily R.</h5>
+            <p class="testimonials__job">Marketing Director</p>
+          </article>
+
+          <article class="testimonials__card">
+            <img src="images/image-thomas.jpg" alt="Profile picture" class="testimonials__img">
+            <p class="testimonials__copy">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success
+              made it a satisfying and enjoyable experience.</p>
+            <h5 class="testimonials__name">Thomas S.</h5>
+            <p class="testimonials__job">Chief Operating Officer</p>
+          </article>
+
+          <article class="testimonials__card">
+            <img src="images/image-jennie.jpg" alt="Profile picture" class="testimonials__img">
+            <p class="testimonials__copy">Incredible end result! Our sales increased over 400% when we worked with
+              Sunnyside. Highly recommended!</p>
+            <h5 class="testimonials__name">Jennie F.</h5>
+            <p class="testimonials__job">Business Owner</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="images">
+      <div class="images__container container">
+        <div class="images__bg images__bg--milkbottles"></div>
+        <div class="images__bg images__bg--orange"></div>
+        <div class="images__bg images__bg--cone"></div>
+        <div class="images__bg images__bg--sugarcubes"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="images/logo-footer.svg" alt="Sunnyside" class="footer__logo">
+
+    <nav class="footer__nav">
+      <ul class="footer__links">
+        <li><a href="#" class="footer__link">About</a></li>
+        <li><a href="#" class="footer__link">Services</a></li>
+        <li><a href="#" class="footer__link">Projects</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__socials">
+      <a href="#" class="footer__item">
+        <i class="footer__icon fa-brands fa-square-facebook"></i>
+      </a>
+      <a href="#" class="footer__item">
+        <i class="footer__icon fa-brands fa-instagram"></i>
+      </a>
+      <a href="#" class="footer__item">
+        <i class="footer__icon fa-brands fa-twitter"></i>
+      </a>
+      <a href="#" class="footer__item">
+        <i class="footer__icon fa-brands fa-pinterest"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/1d47c3ee1f.js" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
