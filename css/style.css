@@ -426,7 +426,7 @@ h1, h2, h3, h4, h5, a {
     background-color: var(--white);
 
     /* display: none; */
-    transition: opacity 0.4s ease;
+    transition: opacity 0.3s ease;
     opacity: 0;
     pointer-events: none;
     z-index: 100;
